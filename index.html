@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="generator" content="pandoc">
+  <title></title>
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+  <link rel="stylesheet" href="https://revealjs.com/css/reveal.css">
+  <style type="text/css">code{white-space: pre;}</style>
+  <link rel="stylesheet" href="https://revealjs.com/css/theme/solarized.css" id="theme">
+  <!-- Printing and PDF exports -->
+  <script>
+    var link = document.createElement( 'link' );
+    link.rel = 'stylesheet';
+    link.type = 'text/css';
+    link.href = window.location.search.match( /print-pdf/gi ) ? 'https://revealjs.com/css/print/pdf.css' : 'https://revealjs.com/css/print/paper.css';
+    document.getElementsByTagName( 'head' )[0].appendChild( link );
+  </script>
+  <!--[if lt IE 9]>
+  <script src="https://revealjs.com/lib/js/html5shiv.js"></script>
+  <![endif]-->
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9b/Logo_IUT_Lens.svg/280px-Logo_IUT_Lens.svg.png" style="float:left;margin-left:-150px;width:200px;height:200px">
+<img src="logo.png" style="float:right;margin-right:-160px;width:200px;height:200px">
+<section><section id="soutenance-de-projet" class="titleslide slide level1"><h2>Soutenance de projet</h2> </section>
+<section class="slide level2">
+<h2>Projet réalisé par :</h2>
+<ul>
+<li><p>Axel BLEUSE</p></li>
+<li><p>Simon VENNAT</p></li>
+<li><p>Maxence BOISEDU</p></li>
+<li><p>Kevin AVOT</p></li>
+<li><p>Kevin KERKHOVE</p></li>
+</ul>
+</section></section>
+<section><section id="sommaire" class="titleslide slide level1"><h2>SOMMAIRE</h2></section><section class="slide level2">
+
+<ul>
+<li><p>I) REFLEXIONS AUTOUR DU SUJET</p></li>
+<li><p>II) REALISATION DU PROJET</p></li>
+<li><p>III) PROBLEMES RENCONTRES ET RESOLUTION</p></li>
+<li><p>IV) DEMO DU SITE/JEU</p></li>
+<li><p>V) BILAN</p></li>
+</ul>
+</section></section>
+<section><section id="i-reflexions-autour-du-projet" class="titleslide slide level1"><h2>I) Réflexions autour du projet</h2></section><section class="slide level2">
+
+<h2>A) Pourquoi ce choix ?</h2>
+<ul>
+<li><p style="font-size: 22px">Volonté d'avoir un jeu différent des standards. </i> .</p></li>
+    <li> <p style="font-size: 22px"> Pas vraiment d'intérêt pour les plateformer "classiques". </p></li>
+<li><p style="font-size: 22px">Choix de créer un shoot-them-up rétro-futuriste (Inspiré de <i>Space Invader</i>).</p></li>
+<img src="2.gif" style="width: 300px;height: 300px;margin-left: 20%">
+</ul>
+</section><section class="slide level2">
+  
+<h2>B) Comment avons nous procédé ? </h2>
+<ul>
+  <li> <p style="font-size: 22px"> Premier Brainstorming pour trouver un type de jeu. </p></li>
+  <li> <p style="font-size: 22px"> Un second pour le titre (créant alors <i>"Chronicles of Naruberaria"</i>). </p></li>
+</ul>
+</section></section>
+
+<section><section id="iirealisation-du-projet" class="titleslide slide level1"><h2>II)REALISATION DU PROJET</h2></section><section class="slide level2">
+<h2>A) Outils collabortifs utilisés</h2>
+<ul>
+<li><p style="font-size: 22px">Utilisation de <b>Messenger et Discord</b> pour les conversations <b>Manuscrites et Vocales</b>. Utilisation régulière du <b>partage d'écran</b> de Discord pour débogguer</p></li>
+<div style="display: flex;">
+<img src="1.png" style="width: 200px;height: 200px;margin-left: 19%">
+<img src="2.png" style="width: 200px;height: 200px;margin-left: 20px">
+</div>
+</ul>
+</section><section class="slide level2">
+  
+<ul>
+  <li><p style="font-size: 22px">Utilisation de <b>GitLab</b> pour le partage de fichiers et pour la gestion des versions.</p></li>
+  <li><p style="font-size: 22px">Utilisation de <b>Trello</b> pour la répartition des tâches.</p></li>
+  <div style="display: flex;">
+  <img src="3.png" style="width: 350px;height: 200px;">
+  <img src="4.png" style="width: 350px;height: 97px;margin-left: 20px">
+</div>
+</ul>
+</section>
+</section>
+<section><section id="ivdemo-du-jeu" class="titleslide slide level1"><h2>III) DEMO DU SITE/JEU</h2></section></section>
+<section><section id="iiiproblemes-rencontres" class="titleslide slide level1"><h2>IV) Problèmes rencontrés et solutions proposées </h2></section><section id="abogues-rencontrés" class="slide level2">
+<h2>A) Concernant les API</h2>
+<ul>
+<li><p style="font-size: 22px">No 1 => Problème de liaison entre Angular et Laravel (<b>Unknown error</b> dès le remplissage d'un formulaire).</p></li>
+<li><p style="font-size: 22px">=> Correction via un changement de valeur pour la variable <i>"apiUrl"</i> du fichier <i>environement.ts</i></p></li>
+<figure style="font-size: 20px">
+<img src="bug1.jpg" style="margin-left: 20%">
+  <figcaption style="margin-left: 20%">Variable après la modification</figcaption>
+</figure>
+</ul>
+</section>
+<section class="slide level2">
+<ul>
+<li><p style="font-size: 22px">No 2 => Problème de validation du formulaire d'inscription (redirection au lieu d'inscription)</p></li>
+<li><p style="font-size: 22px">=> Modification du <i><'Input'></i> qui contenait à la base un <i>routerLink="/game"</i></p></li>
+<figure style="font-size: 20px;">
+<img src="bug2.jpg" style="margin-left: 15%">
+  <figcaption style="margin-left: 20%">Bouton après rectification</figcaption>
+</figure>
+</ul>
+</section>
+<section class="slide level2">
+<ul>
+<li><p style="font-size: 22px">No 3 => Problème de droits (<i>scope error</i>) et de validation pour la modification du profil utilisateur.</p></li>
+<li><p style="font-size: 22px">=> Modification des rôles contenus dans les routes du fichier <i>api.php</i> (<b>sous laravel</b>) et modification du type d'une variable (de String vers Int).</p></li>
+<figure style="font-size: 20px">
+<img src="bug3.jpg" style="margin-left: 15%">
+  <figcaption style="margin-left: 20%">La route après modification</figcaption>
+</figure>
+</ul>
+</section>
+<section class="slide level2">
+  <h2>B) Concernant le jeu</h2>
+  <ul>
+<li><p style="font-size: 22px">No 1 => Les ennemis tués disparaissaient mais l'entité existait encore ils n'étaient <i>"pas vraiment morts"</i>.</p></li>
+<li><p style="font-size: 22px">=> Correction par reprogrammation complète des ennemis les transformant en groupe de sprite (ce qui les rend plus simple à retirer).</p></li>
+</ul>
+</section></section>
+
+<section><section id="v-bilan" class="titleslide slide level1"><h2>V) BILAN</h2>
+<ul>
+<li><p style="font-size: 22px"> Projet intéressant qui a nécessité beaucoup de travail et d'investissement.</p></li>
+    <li> <p style="font-size: 22px"> Premier gros projet web qui a necessité nos compétences de cette 2ème année.</p></li>
+<li><p style="font-size: 22px"> Amélioration de nos compétences en WEB (Apprentissage de la construction d'API).</p></li>
+<li><p style="font-size: 22px"> Le projet a plu (surtout la partie phaser). Nous sommes fiers du résultat final.</p></li>
+</ul>
+</section></section>
+<section><section id="merci-de-votre-ecoute" class="titleslide slide level1"><h2>Merci de votre écoute</h2> <h2>N'hésitez pas à poser vos questions</h2></section></section>
+    </div>
+  </div>
+
+  <script src="https://revealjs.com/lib/js/head.min.js"></script>
+  <script src="https://revealjs.com/js/reveal.js"></script>
+
+  <script>
+
+      // Full list of configuration options available at:
+      // https://github.com/hakimel/reveal.js#configuration
+      Reveal.initialize({
+        // Transition style
+        transition: 'convex', // none/fade/slide/convex/concave/zoom
+        slideNumber:true,
+        progress:true,
+        touch:true,
+        // Optional reveal.js plugins
+        dependencies: [
+          { src: 'https://revealjs.com/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+          { src: 'https://revealjs.com/plugin/zoom-js/zoom.js', async: true },
+              { src: 'https://revealjs.com/plugin/notes/notes.js', async: true }
+        ]
+      });
+    </script>
+    </body>
+</html>
